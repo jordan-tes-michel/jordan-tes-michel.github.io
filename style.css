@@ -18,7 +18,7 @@ h2, h3, h4, h5, #bonjourText {
 
 body {
     padding-top: 150px;
-    background: #2c2c2c;
+    background: black;
     scroll-behavior: smooth;
 }
 
@@ -45,20 +45,20 @@ h5 {
 /* HEADER */
 
 header {
-    background: #323234;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 90px;
     padding-right: 100px;
 }
 
 header img {
-    width: 150px;
-    margin-left: 10px;
+    width: 100px;
+    margin-left: 0;
     transform: scale(1);
     transition: transform 0.2s ease-in;
 }
@@ -70,11 +70,15 @@ header img:hover {
 
 header nav {
     width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .navigation {
     margin-left: 50px;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     column-gap: 100px;
@@ -108,7 +112,7 @@ main {
 }
 
 .lightContent {
-    background: #323234;
+    background: #111111;
 }
 
 .title {
@@ -141,8 +145,18 @@ main {
     font-weight: bold;
 }
 
-#bonjour article {
-    display: flex;
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 100%;
 }
 
 #cv, #projets {
@@ -169,6 +183,7 @@ main {
 }
 
 #projets {
+    color: black !important;
     margin-bottom: 30px;
 }
 
@@ -179,10 +194,16 @@ main {
 }
 
 .imgDescr {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: #1e1e1e;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 25px;
+    border-radius: 5px;
+    box-shadow: white 0 0 1px -5px;
 }
 
 .imgDescr a {
@@ -190,12 +211,11 @@ main {
 }
 
 .image {
-    background: black;
-    border-radius: 27px;
+    box-sizing: border-box;
+    border-radius: 5px 0px 0px 5px;
     width: 250px;
     height: 250px;
     overflow: hidden;
-    box-shadow: black 0 0 20px -5px;
     padding: 10px 10px;
     display: flex;
     align-items: center;
@@ -220,10 +240,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex-shrink: 50;
+    padding: 10px 20px 10px 0px;
 }
 
 footer {
-    background: #434343;
+    background: #262626;
     width: 100%;
     height: 65px;
     display: flex;
@@ -293,6 +314,12 @@ footer a {
         transition: transform 0.2s ease-out;
     }
 
+    #bonjour article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #cv article {
         flex-direction: column;
     }
@@ -308,9 +335,7 @@ footer a {
         flex-direction: column;
         align-items: center;
     }
-}
 
-@media screen and (max-width: 800px) {
     .navigation {
         column-gap: 50px;
         transform: translateX(-90px);
