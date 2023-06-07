@@ -9,7 +9,7 @@
 }
 
 h2, h3, h4, h5, p, #cv li {
-    color: white;
+    color: #dddddd;
 }
 
 h2, h3, h4, h5, #bonjourText {
@@ -18,7 +18,7 @@ h2, h3, h4, h5, #bonjourText {
 
 body {
     padding-top: 150px;
-    background: black;
+    background: #111111;
     scroll-behavior: smooth;
 }
 
@@ -45,7 +45,7 @@ h5 {
 /* HEADER */
 
 header {
-    background: black;
+    background: #333333;
     position: fixed;
     top: 0;
     left: 0;
@@ -112,7 +112,7 @@ main {
 }
 
 .lightContent {
-    background: #111111;
+    background: #222222;
 }
 
 .title {
