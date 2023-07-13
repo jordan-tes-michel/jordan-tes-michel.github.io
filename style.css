@@ -87,13 +87,15 @@ header nav {
 }
 
 .navigation li a {
+    padding: .3rem .5rem;
+    border-radius: 5px;
     color: white;
     text-decoration: none;
     font-family: "Roboto Condensed", sans-serif;
 }
 
 .navigation li a:hover {
-    color: #b0b0b0;
+    background-color: rgba(0, 0, 0, 0.311);
 }
 
 /* MAIN */
@@ -153,6 +155,7 @@ main {
     float: left;
     border-radius: 50%;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .avatar img {
